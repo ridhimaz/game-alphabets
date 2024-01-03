@@ -9,7 +9,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
   const [selectedgif, setSelectedgif] = useState(null);
-  const [border,setBorder]=useState(-1);
+  const [border, setBorder] = useState(-1);
   console.log("render", selectedgif)
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
         <Row className='row'>
           <Col className='col' >
             {
-              mockData.map((obj,ind) => { return <Key key={obj.key}  setSelectedgif={setSelectedgif}  obj={obj} border={border===ind} setBorder={setBorder} index={ind}/> }
+              mockData.map((obj, ind) => { return <Key key={obj.key} setSelectedgif={setSelectedgif} obj={obj} border={border === ind} setBorder={setBorder} index={ind} /> }
               )
             }
           </Col>

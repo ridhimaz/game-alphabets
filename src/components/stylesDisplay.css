@@ -10,10 +10,13 @@
     height: 50vh;
     display: flex;
     font-size: 55px;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background: url("../images/landscape.png");
     background-size: 100% 100%;
+    color:rgb(12, 111, 12);
+    font-weight: 700;
 }
 .card1{
   display: flex;
@@ -27,11 +30,8 @@
 @media (max-width:700px){
  #gif{
     height:30vh;
-    
  }   
-
 }
-
   @keyframes slideIn{
     from {
         transform: translateX(-120%);
