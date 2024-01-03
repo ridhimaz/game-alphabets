@@ -1,0 +1,49 @@
+#gif {
+    width:29rem;
+    height:50vh;
+    animation:slideIn 1.2s ease-in;
+    z-index: 2;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+  .nogif {
+    height: 50vh;
+    display: flex;
+    font-size: 55px;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/landscape.png");
+    background-size: 100% 100%;
+}
+.card1{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height:60vh;  
+    width: 100%;
+    background: url("../images/landscape.png");
+    background-size: 100% 100%;
+}
+@media (max-width:700px){
+ #gif{
+    height:30vh;
+    
+ }   
+
+}
+
+  @keyframes slideIn{
+    from {
+        transform: translateX(-120%);
+      }
+      to {
+        transform: translateX(0);
+      }
+  }
+   @media (min-width:1000px){
+    #gif{
+       width:35vw;
+       height:50vh;
+    }   
+   
+   } 
